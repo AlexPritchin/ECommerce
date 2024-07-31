@@ -1,0 +1,12 @@
+@media (min-width: 1024px) {
+  .mainButton {
+    display: none !important;
+  }
+}
+
+.mainButton {
+  display: block;
+  margin-right: 30px;
+  background-color: white;
+  border: none;
+}

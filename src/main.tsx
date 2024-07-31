@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.tsx';
 import ErrorPage from './error-page';
-// import './index.css';
 import { Contact } from './routes/Contact.tsx';
 import { Home } from './routes/Home.tsx';
 import { About } from './routes/About.tsx';
