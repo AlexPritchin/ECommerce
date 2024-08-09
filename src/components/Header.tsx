@@ -7,7 +7,7 @@ import './Header.scss';
 export const Header = () => {
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
 
-  const ulClass = classNames('navlist-horizontal', 'navlist-vertical', {
+  const ulClass = classNames('navlist', {
     'navlist-shown': isMobileMenuVisible,
   });
 
@@ -22,12 +22,7 @@ export const Header = () => {
         />
       </div>
       <nav className='navigation'>
-        <ul
-          // className={`navlist-horizontal navlist-vertical ${
-          //   isMobileMenuVisible ? 'navlist-shown' : ''
-          // }`}
-          className={ulClass}
-        >
+        <ul className={ulClass}>
           <li className='navlist-item'>
             <Link to={`/`}>Home</Link>
           </li>

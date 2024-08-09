@@ -1,48 +1,18 @@
-@media (min-width: 1024px) {
-  .header {
-    height: 70px;
-    width: '100%';
-    border-bottom: 1px solid black !important;
-    display: flex;
-    align-items: center;
-    flex-direction: row !important;
-  }
-
-  .navigation {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative !important;
-    background-color: white !important;
-  }
-
-  .navlist-item {
-    display: inline-block;
-    height: auto !important;
-  }
-
-  .brand-text {
-    margin-left: 135px !important;
-  }
-
-  .titleAndButtonContainer {
-    border-bottom: none !important;
-  }
-
-  .navlist-horizontal {
-    width: 367px !important;
-    margin-right: 135px;
-    display: flex !important;
-    justify-content: space-evenly;
-    flex-direction: row !important;
-  }
-}
+@use '../mixins' as *;
 
 .header {
+  display: flex;
   flex-direction: column;
   align-items: center;
   border-bottom: none;
   position: sticky;
+
+  @include responsive-desktop {
+    height: 70px;
+    width: '100%';
+    border-bottom: 1px solid black;
+    flex-direction: row;
+  }
 }
 
 .navigation {
@@ -51,10 +21,25 @@
   width: 100%;
   position: absolute;
   z-index: 10;
+  top: 70px;
+
+  @include responsive-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    top: 0px;
+  }
 }
 
 .navlist-item {
   height: 30px;
+
+  @include responsive-desktop {
+    display: inline-block;
+    height: auto;
+  }
 }
 
 .brand-text {
@@ -62,6 +47,10 @@
   font-weight: 700;
   font-size: 24px;
   margin-left: 30px;
+
+  @include responsive-desktop {
+    margin-left: 135px;
+  }
 }
 
 a {
@@ -78,23 +67,34 @@ a {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
+
+  @include responsive-desktop {
+    border-bottom: none;
+  }
 }
 
 .navlist-shown {
   display: flex !important;
 }
 
-.navlist-vertical {
+.navlist {
   width: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 0px;
+  display: none;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   margin-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
   list-style-type: none;
-  justify-content: space-evenly;
+
+  @include responsive-desktop {
+    width: 367px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 135px;
+  }
 }
