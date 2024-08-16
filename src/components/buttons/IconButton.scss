@@ -2,11 +2,15 @@
 
 .mainButton {
   display: block;
-  margin-right: 30px;
   background-color: white;
   border: none;
 
-  @include responsive-desktop {
-    display: none;
+  &-hideable {
+    @extend .mainButton;
+    margin-right: 5px;
+
+    @include responsive-desktop {
+      display: none;
+    }
   }
 }

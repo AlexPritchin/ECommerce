@@ -13,30 +13,38 @@ export const Header = () => {
 
   return (
     <header className='header'>
-      <div className='titleAndButtonContainer'>
-        <h2 className='brand-text'>Exclusive</h2>
-        <IconButton
-          clickHandler={() => {
-            setIsMobileMenuVisible(currentValue => !currentValue);
-          }}
-        />
+      <div className='navAndSearchContainer'>
+        <div className='titleAndButtonContainer'>
+          <h2 className='brand-text'>Exclusive</h2>
+          <IconButton
+            iconName='burger'
+            clickHandler={() => {
+              setIsMobileMenuVisible(currentValue => !currentValue);
+            }}
+            shouldHideWhenDesktop
+          />
+        </div>
+        <nav className='navigation'>
+          <ul className={ulClass}>
+            <li className='navlist-item'>
+              <Link to={`/`}>Home</Link>
+            </li>
+            <li className='navlist-item'>
+              <Link to={`/contact`}>Contact</Link>
+            </li>
+            <li className='navlist-item'>
+              <Link to={`/about`}>About</Link>
+            </li>
+            <li className='navlist-item'>
+              <Link to={`/sign-up`}>SignUp</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav className='navigation'>
-        <ul className={ulClass}>
-          <li className='navlist-item'>
-            <Link to={`/`}>Home</Link>
-          </li>
-          <li className='navlist-item'>
-            <Link to={`/contact`}>Contact</Link>
-          </li>
-          <li className='navlist-item'>
-            <Link to={`/about`}>About</Link>
-          </li>
-          <li className='navlist-item'>
-            <Link to={`/sign-up`}>SignUp</Link>
-          </li>
-        </ul>
-      </nav>
+      <div className='buttonsContainer'>
+        <IconButton iconName='like' />
+        <IconButton iconName='cart' />
+      </div>
     </header>
   );
 };
