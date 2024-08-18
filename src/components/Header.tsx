@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IconButton } from './buttons/IconButton';
 import './Header.scss';
+import { SearchBar } from './SearchBar';
 
 export const Header = () => {
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
@@ -40,6 +41,7 @@ export const Header = () => {
             </li>
           </ul>
         </nav>
+        <SearchBar />
       </div>
       <div className='buttonsContainer'>
         <IconButton iconName='like' />
