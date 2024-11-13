@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { IconButton } from './buttons/IconButton';
 import './Header.scss';
 import { SearchBar } from './SearchBar';
@@ -11,6 +11,10 @@ export const Header = () => {
   const ulClass = classNames('navlist', {
     'navlist-shown': isMobileMenuVisible,
   });
+
+  const activeLinkClassNameFunc = ({ isActive }: { isActive: boolean }) => {
+    return `link ${isActive ? 'link-active' : 'link-not-active'}`;
+  };
 
   return (
     <header className='header'>
@@ -28,16 +32,24 @@ export const Header = () => {
         <nav className='navigation'>
           <ul className={ulClass}>
             <li className='navlist-item'>
-              <Link to={`/`}>Home</Link>
+              <NavLink className={activeLinkClassNameFunc} to={`/`}>
+                Home
+              </NavLink>
             </li>
             <li className='navlist-item'>
-              <Link to={`/contact`}>Contact</Link>
+              <NavLink className={activeLinkClassNameFunc} to={`/contact`}>
+                Contact
+              </NavLink>
             </li>
             <li className='navlist-item'>
-              <Link to={`/about`}>About</Link>
+              <NavLink className={activeLinkClassNameFunc} to={`/about`}>
+                About
+              </NavLink>
             </li>
             <li className='navlist-item'>
-              <Link to={`/sign-up`}>SignUp</Link>
+              <NavLink className={activeLinkClassNameFunc} to={`/sign-up`}>
+                SignUp
+              </NavLink>
             </li>
           </ul>
         </nav>
