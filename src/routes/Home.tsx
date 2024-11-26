@@ -1,4 +1,5 @@
 import ArrowRight from '../assets/icons/arrowRight.svg';
+import { Carousel } from '../components/home/Carousel';
 import './Home.scss';
 
 export const Home = () => {
@@ -69,7 +70,8 @@ export const Home = () => {
           </ul>
         </div>
         <div className='carouselContainer'>
-          <div className='carousel'></div>
+          {/* <div className='carousel'></div> */}
+          <Carousel />
         </div>
       </div>
     </div>
