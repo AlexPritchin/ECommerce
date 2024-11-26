@@ -1,0 +1,82 @@
+.mainDiv {
+  margin-left: 8%;
+  margin-right: 9%;
+}
+
+.sidebarContainer {
+  clear: both;
+}
+
+.sidebar {
+  padding-top: 30px;
+  padding-right: 16px;
+  border-right: 1px solid #b3b3b3;
+  width: 217px;
+  float: left;
+}
+
+.mainSidebarList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.mainSidebarList li {
+  height: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.mainSidebarList a {
+  display: flex;
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  line-height: 30px;
+  align-items: center;
+}
+
+.sideBarLinkContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.mainSidebarList ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background-color: white;
+}
+
+.mainSidebarList li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.carouselContainer {
+  padding-top: 40px;
+  padding-left: 45px;
+  height: 344px;
+  margin-left: 24%;
+}
+
+.carousel {
+  height: 100%;
+  background-color: lightblue;
+}
