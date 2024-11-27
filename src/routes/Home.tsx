@@ -70,7 +70,6 @@ export const Home = () => {
           </ul>
         </div>
         <div className='carouselContainer'>
-          {/* <div className='carousel'></div> */}
           <Carousel />
         </div>
       </div>
