@@ -1,0 +1,7 @@
+$desktop: 1024px;
+
+@mixin responsive-desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
