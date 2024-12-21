@@ -80,3 +80,20 @@
   height: 100%;
   background-color: lightblue;
 }
+
+.preFooter {
+  display: flex;
+  width: 943px;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scroll-to-top {
+  display: block;
+  position: absolute;
+  bottom: 408px;
+  right: 89px;
+}

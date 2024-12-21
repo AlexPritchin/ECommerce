@@ -20,7 +20,9 @@ export const Header = () => {
     <header className='header'>
       <div className='navAndSearchContainer'>
         <div className='titleAndButtonContainer'>
-          <h2 className='brand-text'>Exclusive</h2>
+          <h2 className='brand-text' id='brand-text-element'>
+            Exclusive
+          </h2>
           <IconButton
             iconName='burger'
             clickHandler={() => {
