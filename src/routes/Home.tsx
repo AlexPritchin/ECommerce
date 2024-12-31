@@ -1,29 +1,8 @@
 import ArrowRight from '../assets/icons/arrowRight.svg';
 import ArrowUp from '../assets/icons/arrowUp.svg';
 import { Carousel } from '../components/home/Carousel';
-import {
-  PreFooterItem,
-  PreFooterItemProps,
-} from '../components/home/PreFooterItem';
+import { PreFooter } from '../components/PreFooter';
 import './Home.scss';
-
-const preFooterItemsData: PreFooterItemProps[] = [
-  {
-    image: 'Delivery',
-    title: 'FREE AND FAST DELIVERY',
-    description: 'Free delivery for all orders over $140',
-  },
-  {
-    image: 'Service',
-    title: '24/7 CUSTOMER SERVICE',
-    description: 'Friendly 24/7 customer support',
-  },
-  {
-    image: 'Guarantee',
-    title: 'MONEY BACK GUARANTEE',
-    description: 'We return money within 30 days',
-  },
-];
 
 export const Home = () => {
   return (
@@ -96,15 +75,7 @@ export const Home = () => {
           <Carousel />
         </div>
       </div>
-      <div className='preFooter'>
-        {preFooterItemsData.map(item => (
-          <PreFooterItem
-            image={item.image}
-            title={item.title}
-            description={item.description}
-          />
-        ))}
-      </div>
+      <PreFooter />
       <a href='#' className='scroll-to-top'>
         <ArrowUp />
       </a>
