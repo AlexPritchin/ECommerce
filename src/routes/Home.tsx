@@ -1,6 +1,7 @@
 import ArrowRight from '../assets/icons/arrowRight.svg';
-import ArrowUp from '../assets/icons/arrowUp.svg';
+import ArrowUpCircle from '../assets/icons/arrowUpCircle.svg';
 import { Carousel } from '../components/home/Carousel';
+import { ProductsCarousel } from '../components/home/ProductsCarousel';
 import { PreFooter } from '../components/PreFooter';
 import './Home.scss';
 
@@ -75,9 +76,10 @@ export const Home = () => {
           <Carousel />
         </div>
       </div>
+      <ProductsCarousel />
       <PreFooter />
       <a href='#' className='scroll-to-top'>
-        <ArrowUp />
+        <ArrowUpCircle />
       </a>
     </div>
   );
