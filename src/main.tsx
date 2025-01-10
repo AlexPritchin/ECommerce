@@ -7,6 +7,7 @@ import { Contact } from './routes/Contact.tsx';
 import { Home } from './routes/Home.tsx';
 import { About } from './routes/About.tsx';
 import { SignUp } from './routes/SignUp.tsx';
+import { Product } from './routes/Product.tsx';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: 'sign-up',
         element: <SignUp />,
+      },
+      {
+        path: 'product',
+        element: <Product />,
       },
     ],
   },

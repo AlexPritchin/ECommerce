@@ -1,14 +1,7 @@
 import { ProductRating } from '../ProductRating';
+import { ProductItem } from '../../data/products';
 import './ProductsItem.scss';
-
-export type ProductItem = {
-  id: number;
-  imageLink: string;
-  name: String;
-  price: Number;
-  rating: number;
-  reviewsQuantity: Number;
-};
+import { NavLink } from 'react-router-dom';
 
 export interface ProductsItemProps {
   item: ProductItem;
@@ -16,7 +9,11 @@ export interface ProductsItemProps {
 
 export const ProductsItem: React.FC<ProductsItemProps> = ({ item }) => {
   return (
-    <div className='products-item-container'>
+    <NavLink
+      className='products-item-container'
+      to={`/product`}
+      state={{ product: item }}
+    >
       <div className='products-item-image-container'>
         <img src={item.imageLink} />
       </div>
@@ -30,6 +27,6 @@ export const ProductsItem: React.FC<ProductsItemProps> = ({ item }) => {
           ({item.reviewsQuantity.toString()})
         </span>
       </div>
-    </div>
+    </NavLink>
   );
 };

@@ -1,10 +1,22 @@
+import classNames from 'classnames';
 import './MainButton.scss';
 
-export const MainButton: React.FC<
-  React.ButtonHTMLAttributes<HTMLButtonElement>
-> = ({ title, onClick }) => {
+interface MainButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  isSmall?: Boolean;
+}
+
+export const MainButton: React.FC<MainButtonProps> = ({
+  title,
+  onClick,
+  isSmall,
+}) => {
+  const containerClass = classNames('main-button', {
+    'main-button-small': isSmall,
+  });
+
   return (
-    <button className='main-button' onClick={onClick}>
+    <button className={containerClass} onClick={onClick}>
       <span className='main-button-title'>{title}</span>
     </button>
   );
