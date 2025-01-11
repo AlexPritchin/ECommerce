@@ -8,7 +8,7 @@ import { ArrowButton } from '../buttons/ArrowButton';
 import { productItems } from '../../data/products';
 
 export const ProductsCarousel = () => {
-  let sliderRef = useRef(null);
+  let sliderRef = useRef<Slider | null>(null);
 
   let sliderSettings = {
     infinite: false,
@@ -33,22 +33,23 @@ export const ProductsCarousel = () => {
             <ArrowButton
               direction='left'
               clickHandler={() => {
-                sliderRef.slickPrev();
+                sliderRef.current?.slickPrev();
               }}
             />
             <ArrowButton
               direction='right'
               clickHandler={() => {
-                sliderRef.slickNext();
+                sliderRef.current?.slickNext();
               }}
             />
           </div>
         </div>
       </div>
       <Slider
-        ref={slider => {
-          sliderRef = slider;
-        }}
+        // ref={slider => {
+        //   sliderRef = slider;
+        // }}
+        ref={sliderRef}
         {...sliderSettings}
       >
         {productItems.map(product => (
