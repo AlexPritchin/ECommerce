@@ -1,0 +1,68 @@
+.products-carousel-main-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+  margin-bottom: 140px;
+  overflow: hidden;
+}
+
+.products-carousel-header-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.products-carousel-header-category {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.products-carousel-header-category-red-square {
+  height: 40px;
+  width: 20px;
+  border-radius: 4px;
+  background-color: #db4444;
+}
+
+.products-carousel-header-category-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+  color: #db4444;
+}
+
+.products-carousel-header-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.products-carousel-header-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  margin: 0;
+}
+
+.products-carousel-header-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.products-carousel-main-container .slick-list {
+  background-color: white;
+  margin-right: -75px;
+}
+
+.products-carousel-main-container .slick-slide > div {
+  padding-right: 75px;
+}
+
+.products-carousel-main-container .slick-slide > div:first-child {
+  margin-bottom: 60px;
+}
