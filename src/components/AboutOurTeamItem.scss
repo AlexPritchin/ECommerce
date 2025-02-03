@@ -1,0 +1,29 @@
+.about-our-team-item-container {
+  display: flex;
+  flex-direction: column;
+  height: 564px;
+  width: 370px;
+}
+
+.about-our-team-name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  margin: 0;
+  margin-top: 32px;
+}
+
+.about-our-team-position {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.about-our-team-social-images-container {
+  display: flex;
+  margin-top: 16px;
+  width: 104px;
+  justify-content: space-between;
+}

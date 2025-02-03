@@ -1,0 +1,25 @@
+.slick-list {
+  background-color: black;
+}
+
+.slick-slider img {
+  max-height: 350px;
+  object-fit: contain;
+}
+
+.slick-dots {
+  bottom: 10px !important;
+}
+
+.slick-dots li button::before {
+  color: #808080 !important;
+  font-size: 12px;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #db4444 !important;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}

@@ -1,0 +1,121 @@
+.product-main-container {
+  display: flex;
+  gap: 70px;
+  margin-top: 80px;
+  margin-left: 8%;
+  margin-right: 9%;
+  margin-bottom: 140px;
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 700px;
+  min-width: 700px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.product-image {
+  width: 60%;
+}
+
+.product-details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-details-title,
+.product-details-price {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+}
+
+.product-details-title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.product-details-rating-and-reviews-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.product-details-reviews-quantity,
+.product-details-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.product-details-reviews-quantity {
+  color: #808080;
+}
+
+.product-details-price {
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.product-details-description {
+  margin-top: 24px;
+}
+
+.product-details-separator {
+  margin-top: 24px;
+  height: 1px;
+  width: 100%;
+  background-color: #808080;
+}
+
+.product-details-delivery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 180px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+
+.product-details-delivery-item-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 16px;
+  padding-left: 16px;
+}
+
+.container-with-separator {
+  border-bottom: 1px solid #808080;
+}
+
+.product-details-delivery-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-details-delivery-description-title,
+.product-details-delivery-description-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.product-details-delivery-description-title {
+  font-size: 16px;
+  margin: 0;
+}
+
+.product-details-delivery-description-text {
+  font-size: 12px;
+  margin: 0;
+}
+
+.text-underlined {
+  text-decoration: underline;
+}

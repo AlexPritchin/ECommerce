@@ -1,0 +1,16 @@
+@use '../../mixins' as *;
+
+.mainButton {
+  display: block;
+  background-color: white;
+  border: none;
+
+  &-hideable {
+    @extend .mainButton;
+    margin-right: 5px;
+
+    @include responsive-desktop {
+      display: none;
+    }
+  }
+}

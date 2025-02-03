@@ -1,0 +1,69 @@
+.mainFooterContainer {
+  height: 376px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 135px 60px;
+  box-sizing: border-box;
+}
+
+.brand-text-footer {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fafafa;
+  margin: 0;
+}
+
+.sub-header-subscribe {
+  margin-top: 24px !important;
+}
+
+.sub-header,
+.general-text,
+.adv-text {
+  font-family: 'Poppins', sans-serif;
+  color: #fafafa;
+}
+
+.sub-header {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+}
+
+.general-text {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.adv-text {
+  color: #aeaeae;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.download-images-container {
+  display: flex;
+  margin-top: 8px;
+  gap: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.get-it-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-images-container {
+  display: flex;
+  margin-top: 24px;
+  width: 168px;
+  justify-content: space-between;
+}
